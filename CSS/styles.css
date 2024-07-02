@@ -132,32 +132,9 @@ body{
       -moz-border-radius: 40px;
       -ms-border-radius: 40px;
       -o-border-radius: 40px;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -ms-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
 }
 .wrapper .tasks li:first-child{
       margin-top: 0;
-}
-
-.wrapper .tasks li.added {
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.3s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in-out;
-      -o-transition: opacity 0.3s ease-in-out;
-}
-.wrapper .tasks li.removed {
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.3s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in-out;
-      -o-transition: opacity 0.3s ease-in-out;
 }
 
 .wrapper .tasks li::before{

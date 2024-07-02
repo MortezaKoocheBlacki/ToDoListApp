@@ -119,8 +119,7 @@ body{
       display: flex;
       align-items: center;
       margin: 15px 0;
-      white-space: pre;
-      line-break: auto;
+      /* overflow-x: hidden; */
       box-shadow: 
             5px 5px 7px rgba(0, 0, 0, 0.25), 
             inset 2px 2px 5px rgba(0, 0, 0, 0.5), 
@@ -156,7 +155,6 @@ body{
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
 }
-
 .wrapper .tasks li.done{
       background: #189CAB;
 }
@@ -175,14 +173,36 @@ body{
       -o-transform: rotate(315deg);
 }
 
+.wrapper .tasks li span{
+      overflow-x:auto;
+}
+
+/* For WebKit browsers */
+.wrapper .tasks li span::-webkit-scrollbar {
+      height: 6px;
+}
+
+.wrapper .tasks li span::-webkit-scrollbar-track {
+      background: transparent;
+}
+
+.wrapper .tasks li span::-webkit-scrollbar-thumb {
+      background: #FFF;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+
 .wrapper .tasks li i{
       position: absolute;
       right: -50px;
       top: 7px;
       width: 30px;
       height: 30px;
+      font-size: 31px;
       color: #FF2C74;
-      font-size: 30px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;

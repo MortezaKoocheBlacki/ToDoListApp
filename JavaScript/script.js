@@ -14,9 +14,7 @@ userTasksInput.addEventListener("keyup", function(e){
 
 let addingItem = (UserTask) => {
       let taskItem = document.createElement("li");
-      taskItem.innerHTML = `${UserTask} <i class="fa-solid fa-circle-xmark"></i>`
-
-      console.log(UserTask);
+      taskItem.innerHTML = `<span>${UserTask}</span> <i class="fa-solid fa-circle-xmark"></i>`
 
       taskItem.addEventListener("click", function() {
             this.classList.toggle("done");

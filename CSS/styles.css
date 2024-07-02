@@ -38,6 +38,9 @@ body{
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
 }
+::placeholder{
+      font-family: lato;
+}
 
 .wrapper{
       position: relative;
@@ -125,6 +128,7 @@ body{
       padding: 10px 10px 10px 50px;
       background: #005BD8;
       cursor: pointer;
+      text-transform: capitalize;
       border-radius: 40px;
       -webkit-border-radius: 40px;
       -moz-border-radius: 40px;
@@ -153,6 +157,9 @@ body{
       -o-border-radius: 50%;
 }
 
+.wrapper .tasks li.done{
+      background: #189CAB;
+}
 .wrapper .tasks li.done::after{
       content: "";
       position: absolute;

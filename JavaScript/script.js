@@ -3,8 +3,12 @@ taskContainer = document.querySelector(".tasks");
 
 userTasksInput.addEventListener("keyup", function(e){
       if(e.key === "Enter"){
-            addingItem(userTasksInput.value);
-            this.value = "";
+            if(userTasksInput.value){
+                  addingItem(userTasksInput.value);
+                  this.value = "";
+            } else{
+                  alert("Fill Out The Input");
+            }
       }
 });
 
